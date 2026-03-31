@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-dark: #0f172a;
+  --color-brand-primary: #6366f1;
+  --color-brand-primary-light: #818cf8;
+  --color-brand-accent: #f43f5e;
+  --color-brand-cell: #1e293b;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-dark text-slate-100 font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-slate-800/50 backdrop-blur-md border border-slate-700 shadow-xl;
+  }
+}

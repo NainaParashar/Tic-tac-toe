@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": ["esnext"],
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "github.com/heroiclabs/nakama-common/runtime": ["node_modules/@heroiclabs/nakama-project-template/runtime.d.ts"]
+    }
+  },
+  "include": ["data/modules/**/*", "runtime.d.ts"]
+}
